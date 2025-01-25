@@ -4,8 +4,7 @@
 
 A simple Android-based BMI Calculator with a dark theme and modern UI, designed to help users quickly assess their body mass index (BMI) and health status.
 
-![App Screenshot](https://via.placeholder.com/300x600/1241FF/FFFFFF?text=BMI+Calculator)  
-*(Replace with actual screenshots)*
+
 
 ## Features
 - 🖥️ **Dark Theme**: Sleek #121212 background with #1241FF accents
@@ -30,7 +29,6 @@ A simple Android-based BMI Calculator with a dark theme and modern UI, designed 
 
 Click Run 'app' (Shift+F10)
 
-## Screenshots
 
 ## Technology Stack
 🛠️ Android Studio (Latest Stable Version)
