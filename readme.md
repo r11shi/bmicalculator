@@ -4,6 +4,7 @@
 
 A simple Android-based BMI Calculator with a dark theme and modern UI, designed to help users quickly assess their body mass index (BMI) and health status.
 
+![Frame 4](https://github.com/user-attachments/assets/8b6677d2-1a09-4a32-b235-6d002e8c3fee)
 
 
 ## Features
