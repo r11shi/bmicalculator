@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Age Input -->
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BMI Calculator"
+            android:gravity="center"
+            android:padding="20sp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt"
+            android:text="Age"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvAge"
+            android:layout_marginTop="8dp"
+            android:hint="Enter your age"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:padding="12dp"/>
+
+        <!-- Height Input -->
+        <TextView
+            android:id="@+id/tvHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etAge"
+            android:layout_marginTop="16dp"
+            android:text="Height (cm)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHeight"
+            android:layout_marginTop="8dp"
+            android:hint="Enter height"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:padding="12dp"/>
+
+        <!-- Weight Input -->
+        <TextView
+            android:id="@+id/tvWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etHeight"
+            android:layout_marginTop="16dp"
+            android:text="Weight (kg)"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvWeight"
+            android:layout_marginTop="8dp"
+            android:hint="Enter weight"
+            android:inputType="number"
+            android:textColor="#FFFFFF"
+            android:background="#1E1E1E"
+            android:padding="12dp"/>
+
+        <!-- Gender Selection -->
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etWeight"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="#FFFFFF"
+                android:buttonTint="@drawable/radio_button_tint"
+            android:padding="8dp"/>
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="#FFFFFF"
+                android:buttonTint="@drawable/radio_button_tint"
+                android:padding="8dp"/>
+        </RadioGroup>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rgGender"
+            android:layout_marginTop="24dp"
+            android:text="Calculate BMI"
+            android:backgroundTint="#1241FF"
+            android:textColor="#FFFFFF"/>
+
+        <!-- Results -->
+        <TextView
+            android:id="@+id/tvBMI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnCalculate"
+            android:layout_marginTop="24dp"
+            android:text="BMI: "
+            android:textColor="#1241FF"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvBMI"
+            android:layout_marginTop="8dp"
+            android:text="Result: "
+            android:textColor="#1241FF"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</ScrollView>
